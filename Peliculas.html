@@ -49,7 +49,7 @@
        <!-- bloques de series --> 
       <!--   Contenido 1 -->
 		  <label>Buscador:</label>
-      <input type="text" v-model="search" placeholder="Encuentra tu Pelicula..."/>
+      <input type="text" v-model="search" placeholder="Busca las pelicula por nombre o  año..."/>
               
         
     <br>
@@ -112,6 +112,13 @@ const app = new Vue ({
   data: {
     search: '',
     postList : [
+	    new Post(
+'The Blackout',
+'https://easyload.io/e/eMlJkvYrdq',
+'2019',
+'https://image.tmdb.org/t/p/w600_and_h900_bestv2/aqJ7ncSv3S2hy79jr0XTp4kFFEe.jpg'
+
+),
 	    new Post(
 'El caballero de la Navidad',
 'Theknightbeforechristmas.html',
