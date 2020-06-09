@@ -28,10 +28,16 @@
                   <nav id="nav">
                       <ul>
                         <li><a href="https://fandom-series.github.io/Inicio/">Inicio</a></li>
-                        
+                        <li>
+                          <a href="#">Contenido</a>
                           <ul>
                             
-                            
+                            <li><a href="Peliculasm.html">Peliculas</a></li>
+                            <li><a href="Solicitud de series o peliculas.html">Peticiones</a></li>
+                            <li>	
+                            </li>
+                          </ul>
+                        </li>	
                       </ul>
                     </nav>
              
@@ -49,7 +55,7 @@
        <!-- bloques de series --> 
       <!--   Contenido 1 -->
 		  <label>Buscador:</label>
-      <input type="text" v-model="search" placeholder="Busca las pelicula por nombre o  año..."/>
+      <input type="text" v-model="search" placeholder="Encuentra tu Pelicula..."/>
               
         
     <br>
@@ -82,8 +88,12 @@
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-            
+ <script type="text/javascript">
+	$(window).load(function() {
+		$(".load").fadeOut("slow");
+	});
+	</script>
+            <script src="assets/js/percent.js"></script>
       
         </body>
       </html>
@@ -108,13 +118,6 @@ const app = new Vue ({
   data: {
     search: '',
     postList : [
-	    new Post(
-'The Blackout',
-'https://easyload.io/e/eMlJkvYrdq',
-'2019',
-'https://image.tmdb.org/t/p/w600_and_h900_bestv2/aqJ7ncSv3S2hy79jr0XTp4kFFEe.jpg'
-
-),
 	    new Post(
 'El caballero de la Navidad',
 'Theknightbeforechristmas.html',
