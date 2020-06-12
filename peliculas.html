@@ -49,14 +49,13 @@
 		  
           <article class="Cards carPerf" v-for="post in filteredList">
             <div class="CPoster"><a v-bind:href="post.link" target="_blank">
-              <img v-bind:src="post.img"/> </div>
+              <img v-bind:src="post.img"/><vs-button @click="popupActivo4=true" color="danger" type="border">Open fullscreen popup</vs-button> </div>
               <div class="CInfo noHidetho"><h2> {{ post.title }}</h2><span><b>{{ post.author }}</b></span></div>
               <span class="Cborder"></span>
             </a>
           </div>
         
-	 <div class="centerx">
-    <vs-button @click="popupActivo4=true" color="danger" type="border">Open fullscreen popup</vs-button>		
+	 		
 			
 			
           </article>
@@ -89,7 +88,15 @@
       
         </body>
       </html>
-
+<script>
+export default {
+  data(){
+    return {
+      popupActivo4:false
+    }
+  }
+}
+</script>
 
 
     
